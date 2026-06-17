@@ -1,0 +1,213 @@
+:root{
+--color-primario:#2563eb;
+--color-secundario:#6b7280;
+--color-exito:#16a34a;
+--color-peligro:#dc2626;
+--color-advertencia:#facc15;
+--color-fondo:#f3f4f6;
+--color-texto:#111827;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:var(--color-fondo);
+color:var(--color-texto);
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:var(--color-primario);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* NAVBAR */
+
+nav{
+background:#1e40af;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+margin:0;
+}
+
+nav a{
+display:block;
+color:white;
+text-decoration:none;
+padding:15px 20px;
+}
+
+nav a:hover
+
+/* CONTENIDO */
+
+main{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* DASHBOARD GRID */
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+/* CARDS */
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+/* BOTONES */
+
+button{
+border:none;
+cursor:pointer;
+padding:12px 20px;
+border-radius:6px;
+font-size:16px;
+}
+
+.btn-primario{
+background:var(--color-primario);
+color:white;
+}
+
+.btn-primario:hover{
+opacity:.9;
+}
+
+/* FORMULARIOS */
+
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+margin-top:5px;
+margin-bottom:15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+outline:2px solid var(--color-primario);
+}
+
+/* RADIO BUTTONS */
+
+input[type="radio"]{
+width:auto;
+margin-right:5px;
+}
+
+input[type="radio"] + label{
+display:inline;
+}
+
+/* TABLAS */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:var(--color-primario);
+color:white;
+}
+
+th,
+td{
+padding:12px;
+border:1px solid #ddd;
+text-align:left;
+}
+
+/* BADGES */
+
+.badge-alta{
+background:#dc2626;
+color:white;
+padding:5px 10px;
+border-radius:20px;
+}
+
+.badge-media{
+background:#facc15;
+color:black;
+padding:5px 10px;
+border-radius:20px;
+}
+
+.badge-baja{
+background:#16a34a;
+color:white;
+padding:5px 10px;
+border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+```
+nav ul{
+    flex-direction:column;
+}
+
+nav a{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+main{
+    padding:10px;
+}
+
+.dashboard{
+    grid-template-columns:1fr;
+}
+```
+
+}

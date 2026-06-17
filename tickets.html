@@ -1,80 +1,84 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets Registrados</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Sistema Help Desk</h1>
-        <p>Listado de Tickets Registrados</p>
-    </header>
+```
+<header>
+    <h1>Sistema Help Desk</h1>
+    <p>Listado de Tickets Registrados</p>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="reportar.html">Reportar Incidente</a></li>
-            <li><a href="tickets.html">Tickets</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar Incidente</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+    </ul>
+</nav>
 
-    <main>
+<main>
 
-        <section>
+    <section class="card">
 
-            <h2>Listado General</h2>
+        <h2>Listado General</h2>
 
-            <article>
+        <article>
 
-                <h3>Tickets Registrados</h3>
+            <h3>Tickets Registrados</h3>
 
-                <table>
+            <table>
 
-                    <tr>
-                        <th>ID</th>
-                        <th>Título</th>
-                        <th>Categoría</th>
-                        <th>Prioridad</th>
-                        <th>Estado</th>
-                    </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Prioridad</th>
+                    <th>Estado</th>
+                </tr>
 
-                    <tr>
-                        <td>001</td>
-                        <td>Error de conexión</td>
-                        <td>Red</td>
-                        <td>Alta</td>
-                        <td>Pendiente</td>
-                    </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Error de conexión</td>
+                    <td>Red</td>
+                    <td><span class="badge-alta">Alta</span></td>
+                    <td>Pendiente</td>
+                </tr>
 
-                    <tr>
-                        <td>002</td>
-                        <td>Falla en impresora</td>
-                        <td>Hardware</td>
-                        <td>Media</td>
-                        <td>En proceso</td>
-                    </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Falla en impresora</td>
+                    <td>Hardware</td>
+                    <td><span class="badge-media">Media</span></td>
+                    <td>En proceso</td>
+                </tr>
 
-                    <tr>
-                        <td>003</td>
-                        <td>Error de software</td>
-                        <td>Software</td>
-                        <td>Baja</td>
-                        <td>Resuelto</td>
-                    </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Error de software</td>
+                    <td>Software</td>
+                    <td><span class="badge-baja">Baja</span></td>
+                    <td>Resuelto</td>
+                </tr>
 
-                </table>
+            </table>
 
-            </article>
+        </article>
 
-        </section>
+    </section>
 
-    </main>
+</main>
 
-    <footer>
-        <p>Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos</p>
-    </footer>
+<footer>
+    <p>Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos</p>
+</footer>
+```
 
 </body>
 </html>
